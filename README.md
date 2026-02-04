@@ -33,3 +33,8 @@ This project highlights the efficiency gains of transitioning from manual cloud 
 <img width="599" height="125" alt="image" src="https://github.com/user-attachments/assets/0b6e5f68-674b-4c22-b33b-e4d7a937cbeb" />
 
 - Key Takeaway: By using Terraform, I eliminated "Configuration Drift" and ensured that my SOC environment is identical every time it's deployed, allowing me to focus on threat analysis rather than infrastructure troubleshooting.
+
+
+Cost Optimization & Resource Selection
+- Instance Selection: Chose the Standard_B1s instance type. Since a Honeypot primarily processes text-based Syslog telemetry, 1 GiB of RAM is sufficient, reducing cloud spend by over 70% compared to D-series instances.
+- Storage Strategy: Implemented Standard_LRS (HDD) for the OS disk. This minimizes costs while providing adequate IOPS for log generation during brute-force attacks.
