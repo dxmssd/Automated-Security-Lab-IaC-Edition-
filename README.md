@@ -47,4 +47,21 @@ The infrastructure was successfully provisioned using Terraform in less than 1 m
 
 "Troubleshooting: Solving the Connectivity Gap":
 - "During the initial deployment, I encountered a Connection timed out error. I diagnosed that while the NSG rules were defined, the explicit association between the NSG and the NIC was missing. I resolved this by implementing the azurerm_network_interface_security_group_association resource in Terraform, ensuring the security policy was correctly applied to the instance."
-- 
+- "Detected a sync issue where the cloud provider's state didn't match the local HCL definition. Resolved by using -replace flags to re-provision the security layer without impacting compute resources."
+
+Final Connectivity Fix
+
+During deployment, a synchronization issue between the Terraform state and the Azure API prevented the NSG rules from being applied correctly.
+- Root Cause: Resource drift or partial deployment.
+- Solution: Forced a resource recreation using the command terraform apply -replace="azurerm_network_security_group.honeypot_nsg".
+- Outcome: Full SSH connectivity established and security rules successfully verified in the Azure Portal.
+
+Real-Time Threat Intelligence Capture".
+- "Successfully implemented a Python middleware that monitors SSH auth logs and enriches brute-force attempts with geolocation metadata. First live captures originated from ASN 45090 (Tencent Cloud Computing), demonstrating the immediate exposure of cloud assets to global scanning bots."
+<img width="910" height="980" alt="image" src="https://github.com/user-attachments/assets/7288a67c-3222-4073-af65-7617100074b7" />
+
+
+traducir a ingles 
+"Se realizó una auditoría de los binarios instalados mediante dpkg -L, confirmando la presencia de los componentes core: mdsd (Ingestión), telegraf (Métricas) y fluent-bit (Procesamiento de logs). A pesar de la ausencia del script de diagnóstico ama_status.py, se validó la operatividad del agente a nivel de servicio systemctl, permitiendo la ingesta de telemetría personalizada hacia Sentinel."
+
+"Se identificó una corrupción en el script prerm del paquete azuremonitoragent. La resolución requirió la edición manual del flujo de ejecución del sistema de gestión de paquetes dpkg para forzar una purga de binarios y permitir una reinstalación limpia del agente de monitoreo".
