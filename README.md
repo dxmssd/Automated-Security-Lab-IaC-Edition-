@@ -38,3 +38,8 @@ This project highlights the efficiency gains of transitioning from manual cloud 
 Cost Optimization & Resource Selection
 - Instance Selection: Chose the Standard_B1s instance type. Since a Honeypot primarily processes text-based Syslog telemetry, 1 GiB of RAM is sufficient, reducing cloud spend by over 70% compared to D-series instances.
 - Storage Strategy: Implemented Standard_LRS (HDD) for the OS disk. This minimizes costs while providing adequate IOPS for log generation during brute-force attacks.
+
+Deployment Success
+The infrastructure was successfully provisioned using Terraform in less than 1 minute.
+<img width="1920" height="295" alt="image" src="https://github.com/user-attachments/assets/895fe3eb-9f87-419d-a978-fd1d6b02de07" />
+- Evidence of Automation: By executing terraform apply, I deployed 8 critical cloud resources simultaneously, ensuring zero configuration drift and maintaining a strict security posture (Honeypot-ready).
