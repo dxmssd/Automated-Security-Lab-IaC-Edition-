@@ -43,3 +43,8 @@ Deployment Success
 The infrastructure was successfully provisioned using Terraform in less than 1 minute.
 <img width="1920" height="295" alt="image" src="https://github.com/user-attachments/assets/895fe3eb-9f87-419d-a978-fd1d6b02de07" />
 - Evidence of Automation: By executing terraform apply, I deployed 8 critical cloud resources simultaneously, ensuring zero configuration drift and maintaining a strict security posture (Honeypot-ready).
+
+
+"Troubleshooting: Solving the Connectivity Gap":
+- "During the initial deployment, I encountered a Connection timed out error. I diagnosed that while the NSG rules were defined, the explicit association between the NSG and the NIC was missing. I resolved this by implementing the azurerm_network_interface_security_group_association resource in Terraform, ensuring the security policy was correctly applied to the instance."
+- 
