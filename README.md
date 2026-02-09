@@ -61,7 +61,6 @@ Real-Time Threat Intelligence Capture".
 <img width="910" height="980" alt="image" src="https://github.com/user-attachments/assets/7288a67c-3222-4073-af65-7617100074b7" />
 
 
-traducir a ingles 
-"Se realizó una auditoría de los binarios instalados mediante dpkg -L, confirmando la presencia de los componentes core: mdsd (Ingestión), telegraf (Métricas) y fluent-bit (Procesamiento de logs). A pesar de la ausencia del script de diagnóstico ama_status.py, se validó la operatividad del agente a nivel de servicio systemctl, permitiendo la ingesta de telemetría personalizada hacia Sentinel."
+"An audit of the installed binaries was performed using dpkg -L, confirming the presence of the core components: mdsd (Ingestion), telegraf (Metrics), and fluent-bit (Log Processing). Despite the absence of the ama_status.py diagnostic script, the agent's functionality was validated at the systemctl service level, allowing the ingestion of custom telemetry into Sentinel."
 
-"Se identificó una corrupción en el script prerm del paquete azuremonitoragent. La resolución requirió la edición manual del flujo de ejecución del sistema de gestión de paquetes dpkg para forzar una purga de binarios y permitir una reinstalación limpia del agente de monitoreo".
+"Corruption was identified in the prerm script of the azuremonitoragent package. Resolution required manually editing the dpkg package management system's execution flow to force a purge of binaries and allow a clean reinstallation of the monitoring agent."
