@@ -64,3 +64,7 @@ Real-Time Threat Intelligence Capture".
 "An audit of the installed binaries was performed using dpkg -L, confirming the presence of the core components: mdsd (Ingestion), telegraf (Metrics), and fluent-bit (Log Processing). Despite the absence of the ama_status.py diagnostic script, the agent's functionality was validated at the systemctl service level, allowing the ingestion of custom telemetry into Sentinel."
 
 "Corruption was identified in the prerm script of the azuremonitoragent package. Resolution required manually editing the dpkg package management system's execution flow to force a purge of binaries and allow a clean reinstallation of the monitoring agent."
+
+ataques de las comandos : tail -f /var/log/honeypot/attacks.log
+<img width="1914" height="992" alt="image" src="https://github.com/user-attachments/assets/cecc7d13-6e7b-418a-82c4-13a6e15f8eda" />
+
