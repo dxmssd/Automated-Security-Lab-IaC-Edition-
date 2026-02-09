@@ -68,3 +68,7 @@ Real-Time Threat Intelligence Capture".
 ataques de las comandos : tail -f /var/log/honeypot/attacks.log
 <img width="1914" height="992" alt="image" src="https://github.com/user-attachments/assets/cecc7d13-6e7b-418a-82c4-13a6e15f8eda" />
 
+Honeypot Live Attack Map
+<img width="1507" height="652" alt="image" src="https://github.com/user-attachments/assets/9dcdda94-33d2-4d8a-b0a6-471b5f4f311b" />
+
+
