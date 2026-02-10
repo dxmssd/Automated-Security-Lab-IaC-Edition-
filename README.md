@@ -68,6 +68,20 @@ Real-Time Threat Intelligence Capture".
 ataques de las comandos : tail -f /var/log/honeypot/attacks.log
 <img width="1914" height="992" alt="image" src="https://github.com/user-attachments/assets/cecc7d13-6e7b-418a-82c4-13a6e15f8eda" />
 
+## 📉 Resultados y Análisis de Seguridad traducir en ingles
+El despliegue del Honeypot reveló patrones de ataque automatizados en menos de 24 horas:
+
+* **Volumen de Incidentes:** Más de 280 eventos críticos detectados por Azure Sentinel.
+* **Vector de Ataque Principal:** Fuerza bruta sobre el protocolo RDP (Puerto 3389).
+* **Geolocalización:** Gran parte del tráfico malicioso provino de nodos de salida en Países Bajos y Europa del Este, lo que sugiere el uso de botnets.
+
+![Dashboard de Incidentes](assets/incidente.png)
+
+## 💡 Lecciones Aprendidas (Key Takeaways)
+1. **Infraestructura como Código:** El uso de Terraform permitió un despliegue repetible y seguro, eliminando errores de configuración manual en Azure.
+2. **Monitoreo Proactivo:** La integración de Logs personalizados con Sentinel permitió reducir el tiempo de detección de minutos a segundos.
+3. **Automatización:** El script de Python demostró ser eficiente para el enriquecimiento de datos de IP, permitiendo una visualización geográfica inmediata.
+
 Honeypot Live Attack Map
 <img width="1507" height="652" alt="image" src="https://github.com/user-attachments/assets/9dcdda94-33d2-4d8a-b0a6-471b5f4f311b" />
 
