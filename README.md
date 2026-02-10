@@ -13,6 +13,7 @@ This project demonstrates the deployment of a fully functional **Honeypot** in M
 
 ## Technical Architecture
 The lab implements a modern security data pipeline:
+![Maps](diagrams/automated_honeypot_with_terraform.png)
 
 1. **Infrastructure:** Azure VM (Ubuntu) provisioned via **Terraform**.
 2. **Detection:** A custom **Python script** monitors failed login attempts (RDP/SSH).
