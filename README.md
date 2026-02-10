@@ -51,7 +51,7 @@ During the first 24 hours of deployment, the honeypot recorded significant malic
 ---
 
 ## Sample KQL Query (Threat Hunting)
-![Sentinel Metrics](assets/assets/logspng.png)
+![Sentinel Logs](assets/logspng.png)
 To visualize the data, I developed custom KQL queries to parse raw Syslog data:
 
 ```kusto
