@@ -96,8 +96,8 @@ resource "azurerm_linux_virtual_machine" "honeypot_vm" {
   location            = azurerm_resource_group.honeypot_rg.location
   size                = "Standard_B1s"
 
-  admin_username                  = "dante"
-  admin_password                  = "GlpT_23:A_sEFf"
+  admin_username                  = "user"
+  admin_password                  = "pass"
   disable_password_authentication = false
 
   network_interface_ids = [
