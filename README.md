@@ -71,6 +71,5 @@ Syslog
 **Dante Manríquez Riquelme**
 *Informatics Engineering Student at INACAP*
 *Specializing in Cybersecurity, Cloud Infrastructure & DevSecOps*
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/dante-manríquez-riquelme-4314302bb)
+Linkedin: www.linkedin.com/in/dante-manríquez-riquelme-4314302bb
 
