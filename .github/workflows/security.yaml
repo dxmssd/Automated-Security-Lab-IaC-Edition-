@@ -1,0 +1,8 @@
+name: Security review
+on: [push]                        
+jobs:                              
+  chequeo:
+    runs-on: ubuntu-latest         
+    steps:                         
+      - uses: actions/checkout@v4  
+      - run: python3 scanner.py    
