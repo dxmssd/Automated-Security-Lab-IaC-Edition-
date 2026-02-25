@@ -1,0 +1,7 @@
+name: Remote Security Check
+
+on: [push]
+
+jobs:
+  run-security:
+    uses: dxmssd/DevSecOps-Toolkit/.github/workflows/reusable-scan.yml@main
