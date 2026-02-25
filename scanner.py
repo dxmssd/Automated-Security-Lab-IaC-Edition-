@@ -34,7 +34,7 @@ def scan_file(filename):
 
 # Esto es lo que lee el Pipeline de CI/CD
 if __name__ == "__main__":
-    resultado = scan_file("main.tf")
+    resultado = scan_file("terraform/main.tf")
 
     if resultado:
         print("\n FALLO: Se encontraron riesgos. Corregir antes de subir.")
