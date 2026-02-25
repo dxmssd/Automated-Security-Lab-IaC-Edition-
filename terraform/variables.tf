@@ -1,5 +1,5 @@
 variable "admin_username" {
-  description = "Admin User VM "
+  description = "Admin User VM"
   type = string
   default = "azureuser"
 }

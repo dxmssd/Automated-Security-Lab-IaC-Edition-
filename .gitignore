@@ -1,1 +1,2 @@
 .terraform/
+admin_password = "PasswordSeguro123!"
